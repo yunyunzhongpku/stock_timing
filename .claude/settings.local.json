@@ -4,9 +4,51 @@
       "Bash(del strategy3_triangle_breakout_loose_validation.png)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(claude mcp)",
+      "Bash(claude mcp add context7 npx -y @upbound/mcp-context7)",
+      "Bash(claude mcp add chrome-devtools npx -y @modelcontextprotocol/server-puppeteer)",
+      "Bash(claude mcp add context7 npx @upbound/mcp-context7)",
+      "Bash(claude mcp add:*)",
+      "Bash(claude mcp:*)",
+      "Bash(python scripts/strategy1/validate_strategy1.py:*)",
+      "Bash(more:*)",
+      "Bash(findstr:*)",
+      "Bash(python:*)",
+      "Bash(if exist scripts echo \"[EXISTS] scripts/\")",
+      "Bash(if exist metrics echo \"[EXISTS] metrics/\")",
+      "Bash(if exist tests echo \"[EXISTS] tests/\")",
+      "Bash(dir:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -c \"[console]::beep(800,200); [console]::beep(1000,200); [console]::beep(1200,300)\""
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -c \"[console]::beep(1200,200); [console]::beep(1000,200); [console]::beep(800,300)\""
+          }
+        ]
+      }
+    ]
   }
 }
